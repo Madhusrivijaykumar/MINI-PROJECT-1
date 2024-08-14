@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Employee Management</title>
+    <link rel="stylesheet" type="text/css" href="/css/styles.css">
+    <script src="/js/scripts.js"></script>
+</head>
+<body>
+<h1>EmployeeManagement</h1>
+<div>
+    <form id="employeeForm">
+        <input type="hidden" id="employeeId">
+        <div>
+            <label>First Name:</label>
+            <input type="text" id="firstName" required>
+        </div>
+        <div>
+            <label>Last Name:</label>
+            <input type="text" id="lastName" required>
+        </div>
+        <div>
+            <label>Email:</label>
+            <input type="email" id="email" required>
+        </div>
+        <button type="submit">Save</button>
+    </form>
+</div>
+<div>
+    <h2>Employee List</h2>
+    <table>
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Email</th>
+            <th>Actions</th>
+        </tr>
+        </thead>
+        <tbody id="employeeTableBody">
+        </tbody>
+    </table>
+</div>
+</body>
+</html>
